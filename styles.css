@@ -291,6 +291,38 @@ a.page-card { display: block; text-decoration: none; color: inherit; }
 .faq-item h4::before { content: "Q  "; color: var(--gold); font-weight: 700; }
 .faq-item p { color: var(--muted); font-size: 15px; }
 
+/* ===== Contact form ===== */
+.contact-form .field { margin-bottom: 18px; }
+.contact-form label {
+    display: block; font-size: 13px; letter-spacing: 0.4px;
+    color: var(--muted); margin-bottom: 7px;
+}
+.contact-form .req { color: var(--gold); }
+.contact-form input,
+.contact-form textarea {
+    width: 100%; padding: 13px 16px;
+    background: var(--surface); color: var(--text);
+    border: 1px solid var(--border-soft); border-radius: 10px;
+    font-family: 'Inter', sans-serif; font-size: 15px;
+    transition: border-color 0.3s, background 0.3s;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none; border-color: var(--gold); background: var(--surface-2);
+}
+.contact-form .btn { margin-top: 8px; border: none; cursor: pointer; }
+.form-note { color: var(--muted); font-size: 13px; margin-top: 16px; }
+
+.contact-rows { margin-top: 8px; }
+.contact-row {
+    display: flex; gap: 14px; align-items: flex-start;
+    padding: 16px 0; border-top: 1px solid var(--border-soft);
+    text-align: left; color: var(--muted); font-size: 14.5px;
+}
+.contact-row:first-child { border-top: none; }
+.contact-row .ic { font-size: 20px; line-height: 1.3; }
+.contact-row strong { color: var(--text); }
+
 /* ===== Footer ===== */
 footer {
     background: #070b14; border-top: 1px solid var(--border-soft);

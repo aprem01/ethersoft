@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<title>Ethersoft — Contact</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+<div class="container">
+<nav>
+<a class="logo" href="index.html">Ethersoft</a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="cloud-storage.html">Cloud Storage Management</a></li>
+<li><a href="smart-cart.html">Smart Cart</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="company.html">Company</a></li>
+<li><a class="active" href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="container">
+<span class="eyebrow">Contact Us</span>
+<h1>Have any questions or want to <span class="gold-text">get in touch?</span></h1>
+<p>Complete the form and we'll get in touch shortly. Give us a few details, and we will do our best to offer you a solution.</p>
+</div>
+</section>
+
+<!-- Contact form + details -->
+<section class="section" id="form">
+<div class="container">
+<div class="about-content">
+<div class="about-text reveal">
+<span class="eyebrow">Send a Message</span>
+<h2>Tell us about your workloads.</h2>
+<form class="contact-form" onsubmit="return false;">
+<div class="field"><label>Name</label><input type="text" name="name" /></div>
+<div class="field"><label>Email <span class="req">*</span></label><input type="email" name="email" required /></div>
+<div class="field"><label>Phone</label><input type="tel" name="phone" /></div>
+<div class="field"><label>Your Company's Name</label><input type="text" name="company" /></div>
+<div class="field"><label>Questions and Comments:</label><textarea name="message" rows="4"></textarea></div>
+<button class="btn" type="submit">Submit</button>
+<p class="form-note">Schedule an appointment — online meetings available (UTC). Please direct any media inquiries to info@ethersoft.net.</p>
+</form>
+</div>
+<div class="cto-card reveal" style="text-align:left;">
+<h3 style="text-align:center;">Reach Ethersoft</h3>
+<div class="contact-rows">
+<div class="contact-row"><span class="ic">✉️</span><div><strong>Email</strong><br />info@ethersoft.net</div></div>
+<div class="contact-row"><span class="ic">📍</span><div><strong>Location</strong><br />Ethersoft Inc.<br />8 The Green #16285<br />Dover, DE 19901</div></div>
+<div class="contact-row"><span class="ic">🔗</span><div><strong>LinkedIn</strong><br /><a href="https://www.linkedin.com/company/ethersoft-inc/" target="_blank" rel="noopener" style="color:var(--gold);">ethersoft-inc</a></div></div>
+<div class="contact-row"><span class="ic">🗓️</span><div><strong>Schedule a meeting</strong><br />Online meeting · Time zone: UTC</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ (also lives on the real contact page) -->
+<section class="section alt" id="faq">
+<div class="container">
+<div class="reveal" style="text-align:center;">
+<span class="eyebrow">General</span>
+<h2>Frequently Asked Questions</h2>
+</div>
+<div class="faq reveal">
+<div class="faq-item">
+<h4>How many Google Cloud projects can I manage with Ethersoft?</h4>
+<p>Our pricing is per TB, so there is no limit on how many projects you can manage.</p>
+</div>
+<div class="faq-item">
+<h4>How does Ethersoft integrate with my existing Google Cloud setup?</h4>
+<p>Ethersoft integrates seamlessly through Google Cloud APIs. Setup takes less than 10 minutes and requires no changes to your existing infrastructure, with service-account authentication and IAM-based permissions.</p>
+</div>
+<div class="faq-item">
+<h4>Do you offer custom integrations or enterprise features?</h4>
+<p>Yes. Our Enterprise plan includes custom integrations, on-premise deployment options, and dedicated support. Contact us to discuss your requirements and custom SLA needs.</p>
+</div>
+<div class="faq-item">
+<h4>Is my data secure with Ethersoft?</h4>
+<p>Yes. We follow industry-standard security practices, use read-only API access where possible, never store sensitive data permanently, encrypt all communications, and maintain SOC 2 compliance.</p>
+</div>
+<div class="faq-item">
+<h4>What kind of cost savings can I expect?</h4>
+<p>Customers typically see a 20–40% reduction in NetApp storage costs through right-sizing recommendations and usage optimization. Exact savings depend on your current utilization patterns.</p>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<h3>About Us</h3>
+<p>Contact: info@ethersoft.net</p>
+<p>Ethersoft Inc. · 8 The Green #16285, Dover, DE 19901</p>
+<div class="social-links">
+<a href="#">Instagram</a>
+<a href="#">Facebook</a>
+<a href="https://www.linkedin.com/company/ethersoft-inc/" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+<p class="copyright">© 2026 Ethersoft Inc. All rights reserved.</p>
+</div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
