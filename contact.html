@@ -4,6 +4,11 @@
 <meta charset="utf-8" />
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <title>Ethersoft — Contact</title>
+<meta name="description" content="Get in touch with Ethersoft. Tell us about your cloud storage or retail workloads and we'll be in touch shortly." />
+<meta property="og:title" content="Contact Ethersoft" />
+<meta property="og:description" content="Tell us about your workloads — we'll be in touch shortly." />
+<meta name="theme-color" content="#fbfaf7" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -41,14 +46,19 @@
 <div class="about-text reveal">
 <span class="eyebrow">Send a Message</span>
 <h2>Tell us about your workloads.</h2>
-<form class="contact-form" onsubmit="return false;">
-<div class="field"><label>Name</label><input type="text" name="name" /></div>
-<div class="field"><label>Email <span class="req">*</span></label><input type="email" name="email" required /></div>
-<div class="field"><label>Phone</label><input type="tel" name="phone" /></div>
-<div class="field"><label>Your Company's Name</label><input type="text" name="company" /></div>
-<div class="field"><label>Questions and Comments:</label><textarea name="message" rows="4"></textarea></div>
-<button class="btn" type="submit">Submit</button>
-<p class="form-note">Schedule an appointment — online meetings available (UTC). Please direct any media inquiries to info@ethersoft.net.</p>
+<form class="contact-form" data-ajax="true"
+      action="https://formsubmit.co/ajax/kpremks@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="New Ethersoft website enquiry" />
+<input type="hidden" name="_template" value="table" />
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+<div class="field"><label>Name</label><input type="text" name="Name" /></div>
+<div class="field"><label>Email <span class="req">*</span></label><input type="email" name="Email" required /></div>
+<div class="field"><label>Phone</label><input type="tel" name="Phone" /></div>
+<div class="field"><label>Your Company's Name</label><input type="text" name="Company" /></div>
+<div class="field"><label>Questions and Comments:</label><textarea name="Message" rows="4"></textarea></div>
+<button class="btn" type="submit">Send Message</button>
+<p class="form-status" role="status" aria-live="polite"></p>
+<p class="form-note">We typically reply within one business day. Online meetings available (UTC). Media inquiries: info@ethersoft.net.</p>
 </form>
 </div>
 <div class="cto-card reveal" style="text-align:left;">
@@ -98,17 +108,40 @@
 
 <footer>
 <div class="container">
-<h3>About Us</h3>
-<p>Contact: info@ethersoft.net</p>
-<p>Ethersoft Inc. · 8 The Green #16285, Dover, DE 19901</p>
-<div class="social-links">
-<a href="#">Instagram</a>
-<a href="#">Facebook</a>
-<a href="https://www.linkedin.com/company/ethersoft-inc/" target="_blank" rel="noopener">LinkedIn</a>
+<div class="footer-grid">
+<div class="footer-brand">
+<a class="logo" href="index.html">Ethersoft</a>
+<p class="footer-addr">Enterprise SaaS for AI-driven cloud storage management — and intelligent software for the physical retail aisle.</p>
+<p class="footer-addr" style="margin-top:14px;">Ethersoft Inc.<br />8 The Green #16285<br />Dover, DE 19901</p>
 </div>
-<p class="copyright">© 2026 Ethersoft Inc. All rights reserved.</p>
+<div class="footer-col">
+<h5>Platform</h5>
+<a href="cloud-storage.html">Cloud Storage Management</a>
+<a href="smart-cart.html">Smart Cart AI</a>
+<a href="services.html">Services &amp; Products</a>
+</div>
+<div class="footer-col">
+<h5>Company</h5>
+<a href="company.html">About</a>
+<a href="company.html#leadership">Leadership</a>
+<a href="contact.html">Contact</a>
+</div>
+<div class="footer-col">
+<h5>Get in touch</h5>
+<a href="mailto:info@ethersoft.net">info@ethersoft.net</a>
+<a href="https://www.linkedin.com/company/ethersoft-inc/" target="_blank" rel="noopener">LinkedIn</a>
+<a href="contact.html">Book a consultation</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="copyright">© <span class="js-year">2026</span> Ethersoft Inc. All rights reserved.</p>
+<div class="footer-legal">
+<a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="terms.html">Terms of Service</a>
+</div>
+</div>
 </div>
 </footer>
+<button class="back-to-top" aria-label="Back to top">↑</button>
 <script src="app.js"></script>
 </body>
 </html>
