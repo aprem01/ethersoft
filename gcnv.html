@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<title>Ethersoft — GCNV Storage Manager</title>
+<meta name="description" content="Autonomous right-sizing and cost optimization for Google Cloud NetApp Volumes. Cut storage spend 20–40% with read-only API access, human-in-the-loop control, and pricing tied to realized savings." />
+<meta property="og:title" content="Ethersoft — GCNV Storage Manager" />
+<meta property="og:description" content="Autonomous right-sizing for Google Cloud NetApp Volumes. Pricing tied to realized savings." />
+<meta name="theme-color" content="#fbfaf7" />
+<link rel="icon" href="favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+<div class="container">
+<nav>
+<a class="logo" href="index.html">Ethersoft</a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="cloud-storage.html">Cloud Storage Management</a></li>
+<li><a href="smart-cart.html">Smart Cart</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="company.html">Company</a></li>
+<li><a class="nav-cta" href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+<div class="container">
+<span class="eyebrow">Google Cloud NetApp Volumes</span>
+<h1><span class="gold-text">GCNV Storage Manager</span><br />Autonomous right-sizing, on your terms.</h1>
+<p>Most GCNV deployments are over-provisioned by a quarter or more &mdash; not because anyone wanted them that way, but because resizing safely at scale takes time nobody has. We watch your pools and volumes every day, surface only the changes that pay for themselves, and bill 2% of what you actually save.</p>
+<div class="hero-actions">
+<a class="btn" href="https://calendar.app.google/bSoUSivCprmPREwT8" target="_blank" rel="noopener">Book a Demo</a>
+<a class="btn btn-light" href="#how">See How It Works</a>
+</div>
+</div>
+</section>
+
+<!-- Stats band -->
+<section class="section tight">
+<div class="container">
+<div class="stats-band reveal">
+<div class="stat"><div class="n gold-text">20&ndash;40%</div><div class="l">Typical reduction in GCNV spend</div></div>
+<div class="stat"><div class="n gold-text">2%</div><div class="l">Of realized savings &mdash; that&rsquo;s the bill</div></div>
+<div class="stat"><div class="n gold-text">&lt;10 min</div><div class="l">From signup to first recommendation</div></div>
+<div class="stat"><div class="n gold-text">0</div><div class="l">Credentials we ever hold</div></div>
+</div>
+</div>
+</section>
+
+<!-- The problem -->
+<section class="section" id="problem">
+<div class="container">
+<div class="reveal" style="text-align:center;">
+<span class="eyebrow">The Problem</span>
+<h2>Storage that grew quietly past its useful size.</h2>
+<p class="subtitle">Enterprise GCNV environments accumulate slack the way an attic accumulates boxes &mdash; one cautious overestimate at a time. Quarterly reviews don&rsquo;t catch it. Generic FinOps tools alert on it without telling you what to do. And the storage team that could fix it has six other priorities this week.</p>
+</div>
+<div class="features reveal" style="margin-top:48px;">
+<div class="feature-card">
+<div class="feature-icon">📦</div>
+<h3>Over-provisioned by default</h3>
+<p>Volumes are sized for peak load that never comes. Pools are sized for volumes that have since shrunk. The bill compounds quietly, month after month.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">⏳</div>
+<h3>Manual review is too slow</h3>
+<p>Reviewing a hundred pools by hand takes a week. By the time it&rsquo;s done, the data&rsquo;s out of date. So it doesn&rsquo;t happen &mdash; and the slack accumulates.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">⚠️</div>
+<h3>Shrinking is genuinely risky</h3>
+<p>A wrong resize crashes the workload. Storage teams default to leaving margin because they own the outage. Nobody owns the over-spend.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- How it works -->
+<section class="section alt" id="how">
+<div class="container">
+<div class="reveal" style="text-align:center;">
+<span class="eyebrow">How It Works</span>
+<h2>Continuous analysis. Human-in-the-loop action.</h2>
+<p class="subtitle">Four steps, repeating daily. You stay in control of every change.</p>
+</div>
+<div class="features reveal" style="margin-top:48px;">
+<div class="feature-card">
+<div class="feature-icon">1</div>
+<h3>Connect</h3>
+<p>You grant our service account two read-only IAM roles on your GCP project. No credentials change hands. You can revoke access in one click, from your own console.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">2</div>
+<h3>Analyze</h3>
+<p>Every morning we pull seven days of Cloud Monitoring data &mdash; capacity, throughput, latency &mdash; for every NetApp pool and volume. Aggregates to p50, p95, and peak.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">3</div>
+<h3>Recommend</h3>
+<p>Our optimizer compares each resource against safety thresholds and produces a specific resize target with the exact dollar impact &mdash; computed against your tier pricing and any committed-use discounts.</p>
+</div>
+<div class="feature-card">
+<div class="feature-icon">4</div>
+<h3>Approve</h3>
+<p>Your team reviews each recommendation in the dashboard with full reasoning attached. You accept what you trust, reject what you don&rsquo;t, and apply on your own schedule. We verify the change on the next run.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Capabilities -->
+<section class="section" id="capabilities">
+<div class="container">
+<div class="reveal" style="text-align:center;">
+<span class="eyebrow">Capabilities</span>
+<h2>One control plane for GCNV.</h2>
+<p class="subtitle">Built specifically for the pool-and-volume hierarchy NetApp actually bills on &mdash; not a generic disk right-sizer with a NetApp label slapped on it.</p>
+</div>
+<div class="features reveal" style="margin-top:48px;">
+<div class="feature-card">
+<div class="feature-icon">📊</div>
+<h3>Right-Sizing</h3>
+<p>Per-pool and per-volume recommendations grounded in seven-day p95 utilization, with a peak guardrail that hard-blocks any shrink where the lookback peak exceeded 90%. One transient spike never produces an unsafe recommendation.</p>
+<ul class="sub-features">
+<li><strong>Pool-aware economics</strong> &mdash; we model NetApp&rsquo;s actual billing surface, so the savings number on the dashboard is the number that shows up on your bill.</li>
+<li><strong>Tier-correct sizing</strong> &mdash; recommendations respect the minimum capacity of Standard, Premium, Extreme, and Flex tiers, and round to legal NetApp increments.</li>
+<li><strong>Discount-aware pricing</strong> &mdash; plug in your committed-use or negotiated rates once; every dollar figure on the dashboard reflects them.</li>
+</ul>
+</div>
+<div class="feature-card">
+<div class="feature-icon">🛡️</div>
+<h3>Safety Controls</h3>
+<p>You decide what&rsquo;s touchable. Resources labeled mission-critical are excluded from every recommendation, full stop &mdash; no exceptions, no overrides.</p>
+<ul class="sub-features">
+<li><strong>Three exclusion modes</strong> &mdash; GCP label, exact resource name, or regex pattern. Use whichever matches your existing tagging hygiene.</li>
+<li><strong>Read-only by design</strong> &mdash; we never write to your infrastructure. Every recommendation requires an explicit human decision to act on.</li>
+<li><strong>Per-tier guardrails</strong> &mdash; configurable thresholds for shrink, grow, target utilization, and peak guardrail, tunable to your risk appetite.</li>
+</ul>
+</div>
+<div class="feature-card">
+<div class="feature-icon">📈</div>
+<h3>Cost Analytics</h3>
+<p>Dollar figures everywhere &mdash; per recommendation, per pool, per project, across your portfolio. Track potential savings versus realized savings as your team works through the queue.</p>
+<ul class="sub-features">
+<li><strong>Realized-vs-potential</strong> &mdash; the dashboard separates "we could save you this" from "we have saved you this."</li>
+<li><strong>Historical trends</strong> &mdash; see how your spend posture has changed over weeks and months, not just snapshots.</li>
+<li><strong>Per-resource attribution</strong> &mdash; every dollar of savings ties back to a specific pool or volume change, audit-ready.</li>
+</ul>
+</div>
+<div class="feature-card">
+<div class="feature-icon">🔔</div>
+<h3>Proactive Alerts</h3>
+<p>Daily digest delivered to Slack or email &mdash; only when something actually changed. We surface new recommendations, growth signals, and verified savings &mdash; not a stream of noise.</p>
+<ul class="sub-features">
+<li><strong>Delta-driven</strong> &mdash; quiet days produce no alerts. Loud days produce one digest, not twenty.</li>
+<li><strong>Capacity forecasting</strong> &mdash; we flag pools trending toward full before they constrain your team.</li>
+<li><strong>Audit log</strong> &mdash; every recommendation, decision, and verification is recorded for compliance review.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Pricing alignment -->
+<section class="section alt tight" id="pricing">
+<div class="container">
+<div class="reveal" style="text-align:center;">
+<span class="eyebrow">Pricing</span>
+<h2>We get paid when you do.</h2>
+<p class="subtitle">No seat licenses. No data volume tiers. No annual minimum. We charge 2% of the storage cost we verifiably saved you in the prior month. If we save you nothing, you pay nothing.</p>
+</div>
+<div class="value-strip reveal">
+<div class="value">
+<div class="num-big gold-text">$0</div>
+<h4>If we save you nothing</h4>
+<p>No floor, no minimum, no seat license. The incentive alignment is the product.</p>
+</div>
+<div class="value">
+<div class="num-big gold-text">2%</div>
+<h4>Of realized monthly savings</h4>
+<p>Realized, not recommended. We only bill on changes you applied and we verified.</p>
+</div>
+<div class="value">
+<div class="num-big gold-text">1-click</div>
+<h4>Cancellation, anytime</h4>
+<p>Revoke our IAM access in your GCP console. Service ends instantly. No support ticket.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Trust -->
+<section class="section" id="trust">
+<div class="container">
+<div class="reveal" style="text-align:center;">
+<span class="eyebrow">Trust Model</span>
+<h2>Read-only access. No credentials exchanged.</h2>
+<p class="subtitle">The way we connect to your environment is the security conversation. We&rsquo;ve designed it so the conversation is short.</p>
+</div>
+<div class="about-content" style="margin-top:48px;">
+<div class="about-text reveal">
+<h3>What you grant us</h3>
+<ul class="sub-features">
+<li><strong>roles/netapp.viewer</strong> &mdash; list pools, volumes, and their metadata.</li>
+<li><strong>roles/monitoring.viewer</strong> &mdash; read time-series capacity and performance metrics.</li>
+</ul>
+<p style="margin-top:24px;">Two IAM bindings on your project. Granted in under a minute via gcloud, Terraform, or our 1-click setup script. Revoked the same way, instantly, no support ticket required.</p>
+</div>
+<div class="cto-card reveal">
+<h3 style="text-align:center;">What we never receive</h3>
+<ul class="sub-features" style="margin-top:18px;">
+<li><strong>No service account keys</strong> &mdash; nothing to rotate, nothing to leak.</li>
+<li><strong>No OAuth tokens</strong> &mdash; cross-project IAM only.</li>
+<li><strong>No raw time-series</strong> &mdash; we pull statistical summaries, not your underlying metric stream.</li>
+<li><strong>No write access, ever</strong> &mdash; the IAM roles we ask for don&rsquo;t include resize permissions, by design.</li>
+</ul>
+<p style="margin-top:18px; font-size:0.95em;">Every API call we make to your project appears in your own Cloud Audit Logs under our service account. You can audit our access from your own console &mdash; no black box.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section alt" id="faq">
+<div class="container">
+<div class="reveal" style="text-align:center;">
+<span class="eyebrow">General</span>
+<h2>Frequently Asked Questions</h2>
+</div>
+<div class="faq reveal">
+<div class="faq-item">
+<h4>How accurate are the savings numbers on the dashboard?</h4>
+<p>The dashboard computes savings against your tier&rsquo;s list price, multiplied by any committed-use or negotiated discount you&rsquo;ve configured. The number you see is the number that shows up on your monthly bill once the change is applied &mdash; we verify the resize on the next pipeline run before we count it as realized.</p>
+</div>
+<div class="faq-item">
+<h4>What if a volume gets busy after we recommend a shrink?</h4>
+<p>Our shrink threshold uses 7-day p95 utilization, not peak. We hard-block any shrink where the peak in the lookback window exceeded 90% &mdash; one transient backup window or load spike will never produce an unsafe recommendation. You can also tighten the guardrail or label specific volumes mission-critical for full exclusion.</p>
+</div>
+<div class="faq-item">
+<h4>Do you auto-apply changes?</h4>
+<p>No, by design. Every recommendation requires explicit human approval. We don&rsquo;t have, and never ask for, write access to your NetApp infrastructure. Trust comes from the analysis first; auto-apply is the conversation we have years from now, not the foundation we build on.</p>
+</div>
+<div class="faq-item">
+<h4>How do you handle mission-critical workloads?</h4>
+<p>Three exclusion paths. Any GCP label of your choice (we default to <code>ethersoft-critical=true</code>), an exact resource-name allowlist, or a regex pattern &mdash; whichever fits your existing tagging hygiene. Excluded resources never appear as a recommendation, full stop.</p>
+</div>
+<div class="faq-item">
+<h4>How long does setup take?</h4>
+<p>Under ten minutes for most customers. You add your GCP project ID, run two <code>gcloud add-iam-policy-binding</code> commands (or apply our Terraform module), and your first recommendation set arrives within sixty seconds.</p>
+</div>
+<div class="faq-item">
+<h4>How does pricing work when we have multiple GCP projects?</h4>
+<p>Our pricing is 2% of total monthly realized savings across every project you connect &mdash; not per-project, not per-TB, not per-seat. Connect as many projects as you want; there&rsquo;s no penalty for breadth.</p>
+</div>
+<div class="faq-item">
+<h4>Will this work alongside our existing FinOps tooling?</h4>
+<p>Yes. We&rsquo;re a specialist layer focused on NetApp Volumes, not a competitor to your existing cost management stack. Most customers run us alongside Cloudability, Vantage, or their internal FinOps platform &mdash; we surface the storage-specific recommendations those tools don&rsquo;t catch.</p>
+</div>
+<div class="faq-item">
+<h4>What about AWS FSx for NetApp and Azure NetApp Files?</h4>
+<p>On the roadmap. The rule engine ports cleanly; the connector work is real. We&rsquo;re focused on GCNV first because that&rsquo;s where the slack is largest and the install base is growing fastest. Talk to us if multi-cloud NetApp coverage is a near-term requirement.</p>
+</div>
+</div>
+<div style="text-align:center; margin-top:48px;">
+<a class="btn" href="https://calendar.app.google/bSoUSivCprmPREwT8" target="_blank" rel="noopener">Book a Demo</a>
+<a class="btn btn-light" href="cloud-storage.html">← Back to Cloud Storage</a>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a class="logo" href="index.html">Ethersoft</a>
+<p class="footer-addr">Enterprise SaaS for AI-driven cloud storage management &mdash; and intelligent software for the physical retail aisle.</p>
+<p class="footer-addr" style="margin-top:14px;">Ethersoft Inc.<br />8 The Green #16285<br />Dover, DE 19901</p>
+</div>
+<div class="footer-col">
+<h5>Platform</h5>
+<a href="cloud-storage.html">Cloud Storage Management</a>
+<a href="gcnv.html">GCNV Storage Manager</a>
+<a href="smart-cart.html">Smart Cart AI</a>
+<a href="services.html">Services &amp; Products</a>
+</div>
+<div class="footer-col">
+<h5>Company</h5>
+<a href="company.html">About</a>
+<a href="company.html#leadership">Leadership</a>
+<a href="contact.html">Contact</a>
+</div>
+<div class="footer-col">
+<h5>Get in touch</h5>
+<a href="mailto:info@ethersoft.net">info@ethersoft.net</a>
+<a href="https://www.linkedin.com/company/ethersoft-inc/" target="_blank" rel="noopener">LinkedIn</a>
+<a href="https://calendar.app.google/bSoUSivCprmPREwT8" target="_blank" rel="noopener">Book a consultation</a>
+</div>
+</div>
+<div class="footer-bottom">
+<p class="copyright">&copy; <span class="js-year">2026</span> Ethersoft Inc. All rights reserved.</p>
+<div class="footer-legal">
+<a href="privacy.html">Privacy Policy</a> &nbsp;&middot;&nbsp; <a href="terms.html">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<button class="back-to-top" aria-label="Back to top">&uarr;</button>
+<script src="app.js"></script>
+</body>
+</html>
